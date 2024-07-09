@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Adex</title>
+    <meta name="title" content="Adex" />
+    <meta
+      name="description"
+      content="This is a business agency html template made by codewithsadee"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <!-- <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" /> -->
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <!-- <img
+            src="./assets/images/logo-light.svg"
+            width="74"
+            height="24"
+            alt="Adex home"
+            class="logo-light"
+          />
+
+          <img
+            src="./assets/images/logo-dark.svg"
+            width="74"
+            height="24"
+            alt="Adex home"
+            class="logo-dark"
+          /> -->
+          <h2 id="logo">.WebDu</h2>
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <!-- <img
+                src="./assets/images/logo-light.svg"
+                width="74"
+                height="24"
+                alt="Adex home"
+              /> -->
+              <h2 id="logo" style="color: white">.WebDu</h2>
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#what_we_do" class="navbar-link">What We Do</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="navbar-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <!-- <a href="mailto:info@email.com" class="contact-link"
+              >info@email.com</a
+            > -->
+
+            <a href="tel:201015380754" class="contact-link">+201015380754</a>
+          </div>
+
+          <ul class="social-list">
+            <!-- <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li> -->
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero has-bg-image"
+          aria-label="home"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Welcome to WebDu: Your Gateway to Digital Excellence
+              </h1>
+
+              <p class="hero-text">
+                At WebDu, we specialize in transforming your business vision
+                into reality with cutting-edge digital solutions. Whether you're
+                looking to create a stunning website, develop a powerful web
+                app, or enhance your online presence, we've got you covered.
+              </p>
+
+              <div class="btn-wrapper">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+              </div>
+            </div>
+
+            <div class="hero-slider" data-slider>
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/blog-1.jpg"
+                        width="575"
+                        height="550"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <div class="hero-card">
+                      <figure
+                        class="img-holder"
+                        style="--width: 575; --height: 550"
+                      >
+                        <img
+                          src="./assets/images/hero-slide-2.jpg"
+                          width="575"
+                          height="550"
+                          alt="hero banner"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <button class="play-btn" aria-label="play adex intro">
+                        <ion-icon name="play" aria-hidden="true"></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                class="slider-btn prev"
+                aria-label="slide to previous"
+                data-slider-prev
+              >
+                <ion-icon name="arrow-back"></ion-icon>
+              </button>
+
+              <button
+                class="slider-btn next"
+                aria-label="slide to next"
+                data-slider-next
+              >
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section
+          id="what_we_do"
+          class="section service"
+          aria-labelledby="service-label"
+        >
+          <div class="container">
+            <p class="section-subtitle" id="service-label">What We Do?</p>
+
+            <h2 class="h2 section-title">
+              The service we offer is specifically designed to meet your needs.
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Website Creation</h3>
+
+                  <p class="card-text">
+                    Custom-designed websites to meet your business needs and
+                    attract more customers.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="cloud-download-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Web App Development</h3>
+
+                  <p class="card-text">
+                    Building web applications that enhance your business
+                    operations and user engagement.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="pie-chart-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Website Development</h3>
+
+                  <p class="card-text">
+                    Upgrading and maintaining your existing website to keep it
+                    modern and efficient.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="shield-checkmark-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">SEO Services</h3>
+
+                  <p class="card-text">
+                    Enhancing your online presence and making it easier for
+                    customers to find you.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section
+          id="about"
+          class="about"
+          aria-labelledby="about-label"
+          style="margin-bottom: 180px"
+        >
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                width="800"
+                height="580"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+              <h2 class="h2 section-title">
+                We bring solutions to make life easier for our clients.
+              </h2>
+
+              <ul>
+                <li class="about-item">
+                  <div class="accordion-card expanded" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Innovative Website Creation</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      We design and develop visually appealing and highly
+                      functional websites tailored to your business needs.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5"
+                          >Advanced Web App Development</spna
+                        >
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Our team builds robust web applications that streamline
+                      your operations and engage your users.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5"
+                          >Comprehensive Website Development</spna
+                        >
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      From initial development to ongoing maintenance, we ensure
+                      your website remains modern, secure, and efficient.
+                    </p>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Effective SEO Services</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Boost your search engine rankings and attract more
+                      visitors with our expert SEO strategies.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- <div style="padding: 70px"></div> -->
+        <!-- <section class="stats" aria-label="our stats">
+          <div class="container">
+            <ul
+              class="stats-card has-bg-image"
+              style="background-image: url('./assets/images/stats-bg.jpg')"
+            >
+              <li>
+                <p class="card-text">
+                  <span class="h1">7518</span>
+
+                  <spna class="span">Completed Projects</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">3472</span>
+
+                  <spna class="span">Happy Customers</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">2184</span>
+
+                  <spna class="span">Expert Employees</spna>
+                </p>
+              </li>
+
+              <li>
+                <p class="card-text">
+                  <span class="h1">4523</span>
+
+                  <spna class="span">Awards Won</spna>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section
+          id="projects"
+          class="section project"
+          aria-labelledby="project-label"
+        >
+          <div class="container">
+            <p class="section-subtitle" id="project-label">Projects</p>
+
+            <h2 class="h2 section-title">
+              Check out some of our awesome projects with creative ideas and
+              great design.
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/proj1.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ligula tristique quis risus"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://billa-sweet.vercel.app/"
+                        class="card-title"
+                        target="_blank"
+                        >Billa Sweet Store</a
+                      >
+                    </h3>
+                    <a
+                      id="demo"
+                      href="https://billa-sweet.vercel.app/"
+                      target="_blank"
+                      >Live Demo &rarr;</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/proj5.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ligula tristique quis risus"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://food-order-app-tau-liart.vercel.app/menu"
+                        target="_blank"
+                        class="card-title"
+                        >Restaurant management system and its menu</a
+                      >
+                    </h3>
+                    <a
+                      id="demo"
+                      href="https://food-order-app-tau-liart.vercel.app/menu"
+                      target="_blank"
+                      >Live Demo &rarr;</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/proj2.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ligula tristique quis risus"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://nokhba.vercel.app/"
+                        class="card-title"
+                        target="_blank"
+                        >Nokhba Dental Centre</a
+                      >
+                    </h3>
+                    <a
+                      id="demo"
+                      href="https://nokhba.vercel.app/"
+                      target="_blank"
+                      >Live Demo &rarr;</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/proj3.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ligula tristique quis risus"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://kobodrop-app.vercel.app/"
+                        class="card-title"
+                        target="_blank"
+                        >kobodrop Landing Page</a
+                      >
+                    </h3>
+                    <a
+                      id="demo"
+                      href="https://kobodrop-app.vercel.app/"
+                      target="_blank"
+                      >Live Demo &rarr;</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/proj4.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ligula tristique quis risus"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a
+                        href="https://proj3-silk.vercel.app/"
+                        class="card-title"
+                        target="_blank"
+                        >Payment Method Landing Page</a
+                      >
+                    </h3>
+                    <a
+                      id="demo"
+                      href="https://proj3-silk.vercel.app/"
+                      target="_blank"
+                      >Live Demo &rarr;</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section class="cta" aria-label="call to action">
+          <div class="container">
+            <h2 class="h2 section-title">Join the WebDu Family</h2>
+
+            <!-- <a href="#" class="btn btn-primary">Try it For Free</a> -->
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="contact">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <!-- <img
+              src="./assets/images/logo-light.svg"
+              width="74"
+              height="24"
+              alt="Adex home"
+            /> -->
+            <h2 style="color: white">.WebDu</h2>
+          </a>
+
+          <p class="footer-text">
+            &copy; 2022 .WebDu. <br />
+            All rights reserved.
+          </p>
+
+          <ul class="social-list">
+            <!-- <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Get in Touch</p>
+          </li>
+
+          <!-- <li>
+            <address class="footer-text">
+              Moonshine St. 14/05 Light City, London, United Kingdom
+            </address>
+          </li> -->
+
+          <!-- <li>
+            <a href="mailto:mo.03.reda$gmail.com" class="footer-link"
+              >mo.03.reda$gmail.com</a
+            >
+          </li> -->
+
+          <li>
+            <a href="tel:201015380754" class="footer-link">+201015380754</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Learn More</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#what_we_do" class="footer-link">What We Do</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="footer-link">Projects</a>
+          </li>
+        </ul>
+
+        <div class="footer-list">
+          <p class="h4 footer-list-title">Our Newsletter</p>
+
+          <p class="footer-text">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+
+          <form action="" class="input-wrapper">
+            <input
+              type="email"
+              name="email_address"
+              placeholder="Email Address"
+              required
+              class="input-field"
+            />
+
+            <button type="submit" class="submit-btn">Join</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
